@@ -1,0 +1,16 @@
+{% extends 'base.html' %}
+
+{% block content %}
+<form action="/answer" method="post">
+    <p>{{question}}</p>
+    {% for choice in choices %}
+        <label for="{{choice}}">{{choice}}</label>
+        <input type="radio" name="choice" id="" value="{{choice}}">
+    {% endfor %}
+    <button>Continue</button>
+    <!-- <label for="choice-1">Yes</label>
+    <input type="radio" name="{{choice}}" id="choice-1">
+    <label for="choice-2">No</label>
+    <input type="radio" name="{{choice}}" id="choice-2"> -->
+</form>
+{% endblock %}
