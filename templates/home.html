@@ -5,6 +5,9 @@
 <p class="survey-title">{{title}}</p>
 <p class="instructions">{{instructions}}</p>
 
-<a href="/questions/0">Start Survey</a>
+<form action="/begin" method="POST">
+    <button>Start Survey</button>
+</form>
+
 
 {% endblock %}
